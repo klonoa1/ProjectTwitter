@@ -31,7 +31,7 @@
                            <ul class="stats">
                                <li class="stats-item">
                                    <b class="stats-title">Твиты</b>
-                                   <b class="stats-count">60</b>
+                                   <b class="stats-count" id="tweetsCounter"></b>
                                </li>
                                <!-- <li class="stats-item">
                                    <b class="stats-title">Лайки</b>
@@ -54,9 +54,9 @@
                   <!-- Make a tweet -->
                    <div class="card mb-3">
                        <div class="card-body">
-                           <form>
+                           <form id="postNewTweet">
                               <div class="form-group">  
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Что нового?">
+                                <input type="text" id="tweetText" class="form-control" id="exampleInputEmail1" placeholder="Что нового?">
                               </div>
                               <button type="submit" class="btn btn-primary">Твитнуть</button>
                             </form>
@@ -64,47 +64,19 @@
                    </div>
                   <!-- // Make a tweet -->
                    
-                   <div class="card tweet-card tweet-card-rounded-top">
+                   <div class="card card-title-only tweet-card-rounded-top">
                         <div class="h4 mb-0">Твиты пользователя</div>
                    </div>
                    
-                   <!-- Single Tweet -->
-                   <div class="card tweet-card">
-                       <div class="tweet-date">17 фев. 2018 г.</div>
-                       <div class="tweet-text font-size-large">
-                           <p>Создай свой первый сайт на HTML5 и CSS3
-                           <a href="http://webcademy.ru/htmlsite/">http://webcademy.ru/htmlsite/</a></p>
-                       </div>
-                   </div>
-                   <!-- // Single Tweet -->
+                   <!-- Tweets List -->
+                   <div id="tweetsList">
+                       
                    
-                   <!-- Single Tweet -->
-                   <div class="card tweet-card">
-                       <div class="tweet-date">15 фев. 2018 г.</div>
-                       <div class="tweet-text font-size-large">
-                           <p>Страница 404 не найдена.</p>
-                       </div>
-                   </div>
-                   <!-- // Single Tweet -->
                    
-                   <!-- Single Tweet -->
-                   <div class="card tweet-card">
-                       <div class="tweet-date">12 фев. 2018 г.</div>
-                       <div class="tweet-text font-size-normal">
-                           <p>Хотел поговорить с утопленником, а он как будто воды в рот набрал.</p>
-                       </div>
+                       
+                       
                    </div>
-                   <!-- // Single Tweet -->
-                   
-                   <!-- Single Tweet -->
-                   <div class="card tweet-card">
-                       <div class="tweet-date">10 фев. 2018 г.</div>
-                       <div class="tweet-text font-size-small">
-                           <p>Их было 4, 4 днк полимеразы, как энхансер и сайленсер, как активатор и терминатор. 1 пацан страшно тупил, с 5 штриха конца однажды затусил, фрагменты оказаки злыми парнями оказались, фрагменты оказаки- страшная сила. 2 пацан хеликазу больше жизни любил, но когда на другой цепи днк ее увидел, апоптоз запустил. Третий пацан по мутациям угорал. Не заметил как инфузорией стал.
-                           Четвертый пацан оставшись один, сказал. Днк- я с вами.</p>
-                       </div>
-                   </div>
-                   <!-- // Single Tweet -->
+                   <!-- // Tweets List -->
                    
                    <!-- Footer -->
                    <footer class="footer">
@@ -123,6 +95,7 @@
     <script src="libs/jquery/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
     
 </body>
 </html>
